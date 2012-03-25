@@ -1,0 +1,105 @@
+/* Give our app a new color scheme. The app is going to be black, with white/off-white text */
+p {
+  color: white;
+}
+a{
+   color: #2879c7;
+}
+
+
+body {
+  background-image: linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 5%);
+  background-image: -o-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -moz-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -webkit-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  background-image: -ms-linear-gradient(bottom, rgb(38,43,50) 24%, rgb(3,3,3) 51%);
+  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.04, rgb(38,43,50)),
+    color-stop(0.81, rgb(3,3,3))
+  );
+  color: #FDFDFD;
+}
+
+#bottom2 {
+  border-top: 2px solid #2787AA;
+}
+
+#wrapper, #content {
+  background-color: transparent;
+  background-image: none;
+  font-family: Robotica, Droid, Droid Sans, Droid Sans Mono, Droid Serif, DroidSans, DroidSansMono, DroidSerif;
+  font-size: 1em;
+}
+
+/* Setup our layout so the navigation looks like android, at the top of the page. */
+
+#top2{
+  color: white; 
+}
+
+#content {
+  text-align: justify;
+}
+
+#menu {
+  padding: 0px;
+  height: 50px;
+}
+
+#menu .nav_item h2 {
+  color: #858585;
+  padding-top: 37px;
+  background-color: #000;
+  background-size: 37px;
+  background-position: center 2px;
+}
+
+#menu .nav_item {
+  background-image: none;
+  border-bottom: 2px solid #2787AA;
+}
+
+#menu #cloud h2, #menu #index h2, #menu #intro h2, #menu #packages h2{
+  background-position: center 6px;
+  background-size: 25px;
+}
+
+#menu #cloud h2 {
+ background-position: center 11px; 
+ background-size: 32px;
+}
+#menu #index h2 {
+ background-position: center 6px; 
+ background-size: 20px;
+}
+#menu #packages h2 {
+ background-position: center 8px; 
+ background-size: 28px;
+}
+
+#menu .button_active, #menu .button_active h2 {
+  background-color: #2787AA;
+  color: #FFF;
+}
+
+#reload_button{
+  width: 57.5%;
+  margin-left: 21.5%;
+  margin-bottom: 10px;
+  background: #454545;
+  border-top: 1px solid white;
+  border-bottom: 2px solid black;
+  border-radius: 1px;
+  color: white;
+}
+#reload_button:hover,
+#reload_button:focus:hover {
+  background: #2DA2CD;
+  box-shadow: none;
+  border: 2px solid rgba(22, 81, 103, .5);
+  border-radius: 5px;
+}
