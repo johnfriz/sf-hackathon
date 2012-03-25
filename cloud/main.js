@@ -1,4 +1,5 @@
 var util = require('util');
+var fb = require('./fb.js')
 /* main.js
  * All calls here are publicly exposed as REST API endpoints.
  * - all parameters must be passed in a single JSON paramater.
@@ -13,3 +14,9 @@ exports.getConfig = function(params, callback) {
   var cfg = require("config.js");
   return callback(null, {data: cfg.config});
 };
+
+exports.facebook = function(params, callback) {
+  console.log('in main.facebook()');
+
+  return fb.doFB(callback);
+}
