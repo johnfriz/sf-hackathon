@@ -1,5 +1,5 @@
 var util = require('util');
-var fb = require('./fb.js')
+var fb = require('fb.js')
 /* main.js
  * All calls here are publicly exposed as REST API endpoints.
  * - all parameters must be passed in a single JSON paramater.
